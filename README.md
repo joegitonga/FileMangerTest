@@ -15,3 +15,7 @@ The application employs MD5 Encryption whilst verifying the users
 
 The .NET Application requires the users to login before viewing the sent files
 The functionality for this however is yet to be complete but is still a work in progress
+### Installation
+In the FileManagerTest folder locate the database folder to get the .bak file.
+Restore it to your local machine and be sure to change the connection string under the App.config to point to your local machine.
+The login credentials are: Username: "Admin" and Password: "pass1234"
