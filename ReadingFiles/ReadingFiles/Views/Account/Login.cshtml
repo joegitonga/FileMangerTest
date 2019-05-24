@@ -1,0 +1,29 @@
+﻿@model ReadingFiles.Models.LoginModel
+
+
+@using (Html.BeginForm())
+{
+    <div>
+        @{
+            ViewBag.Title = "Login";
+        }
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Username)
+    </div>
+    <div>
+        @Html.TextBoxFor(m => m.Username)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Password)
+    </div>
+    <div>
+        @Html.PasswordFor(m => m.Password)
+    </div>
+    <div>
+
+    </div>
+    <div>
+        <input value="Login" input type="submit" />
+    </div>
+}

@@ -1,0 +1,14 @@
+Base Exception Type: NetworkCommsDotNet.ConnectionSetupException: Timeout waiting for server connnectionInfo from [TCP-E-I] 192.168.1.201:30199 -> 192.168.1.201:1800. Connection created at 18:40:13.149, its now 18:40:23.2
+   at NetworkCommsDotNet.Connections.Connection.ConnectionHandshake()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.EstablishConnectionSpecific()
+   at NetworkCommsDotNet.Connections.Connection.EstablishConnection()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, SendReceiveOptions defaultSendReceiveOptions, TcpClient tcpClient, Boolean establishIfRequired, SSLOptions sslOptions)
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, Boolean establishIfRequired)
+   at FileManagerTest.MainWindow.<>c__DisplayClass9_0.<SendFileButton_Click>b__0() in C:\Users\user\documents\visual studio 2015\Projects\FileManagerTest\FileManagerTest\MainWindow.xaml.cs:line 131
+
+Stack Trace:    at NetworkCommsDotNet.Connections.Connection.ConnectionHandshake()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.EstablishConnectionSpecific()
+   at NetworkCommsDotNet.Connections.Connection.EstablishConnection()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, SendReceiveOptions defaultSendReceiveOptions, TcpClient tcpClient, Boolean establishIfRequired, SSLOptions sslOptions)
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, Boolean establishIfRequired)
+   at FileManagerTest.MainWindow.<>c__DisplayClass9_0.<SendFileButton_Click>b__0() in C:\Users\user\documents\visual studio 2015\Projects\FileManagerTest\FileManagerTest\MainWindow.xaml.cs:line 131

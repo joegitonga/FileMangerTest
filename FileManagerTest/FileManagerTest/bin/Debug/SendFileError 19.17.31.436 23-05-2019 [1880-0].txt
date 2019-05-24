@@ -1,0 +1,18 @@
+Base Exception Type: NetworkCommsDotNet.ConnectionSetupException: Connection reference by endPoint cannot be added once a connection has been shutdown.
+   at NetworkCommsDotNet.NetworkComms.AddConnectionReferenceByRemoteEndPoint(Connection connection, EndPoint remoteEndPointToUse, EndPoint localEndPointToUse)
+   at NetworkCommsDotNet.NetworkComms.UpdateConnectionReferenceByEndPoint(Connection connection, EndPoint newRemoteEndPoint, EndPoint newLocalEndPoint)
+   at NetworkCommsDotNet.Connections.Connection.ConnectionHandshake()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.EstablishConnectionSpecific()
+   at NetworkCommsDotNet.Connections.Connection.EstablishConnection()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, SendReceiveOptions defaultSendReceiveOptions, TcpClient tcpClient, Boolean establishIfRequired, SSLOptions sslOptions)
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, Boolean establishIfRequired)
+   at FileManagerTest.MainWindow.<>c__DisplayClass9_0.<SendFileButton_Click>b__0() in C:\Users\user\documents\visual studio 2015\Projects\FileManagerTest\FileManagerTest\MainWindow.xaml.cs:line 131
+
+Stack Trace:    at NetworkCommsDotNet.NetworkComms.AddConnectionReferenceByRemoteEndPoint(Connection connection, EndPoint remoteEndPointToUse, EndPoint localEndPointToUse)
+   at NetworkCommsDotNet.NetworkComms.UpdateConnectionReferenceByEndPoint(Connection connection, EndPoint newRemoteEndPoint, EndPoint newLocalEndPoint)
+   at NetworkCommsDotNet.Connections.Connection.ConnectionHandshake()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.EstablishConnectionSpecific()
+   at NetworkCommsDotNet.Connections.Connection.EstablishConnection()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, SendReceiveOptions defaultSendReceiveOptions, TcpClient tcpClient, Boolean establishIfRequired, SSLOptions sslOptions)
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, Boolean establishIfRequired)
+   at FileManagerTest.MainWindow.<>c__DisplayClass9_0.<SendFileButton_Click>b__0() in C:\Users\user\documents\visual studio 2015\Projects\FileManagerTest\FileManagerTest\MainWindow.xaml.cs:line 131
